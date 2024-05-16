@@ -1,6 +1,5 @@
 package com.lhjundi.domain.entities.user;
 
-import static java.lang.StringTemplate.STR;
 
 public abstract class User {
     private String institutionalId;
@@ -34,7 +33,7 @@ public abstract class User {
         numberOfBooksCheckedOut++;
     }
 
-    private boolean isAbleToCheckOut() {
+    public boolean isAbleToCheckOut() {
         return numberOfBooksCheckedOut < getLimitOfBooksToCheckOut();
     }
 

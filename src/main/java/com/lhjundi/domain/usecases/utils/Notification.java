@@ -8,7 +8,11 @@ public class Notification {
 
     List<Error> errors = new ArrayList<>();
 
-    public void addError(String message, Exception e){
+    public void addError(String message){
+        addError(message, null);
+    }
+
+    public void addError(String message, Exception e) {
         addError(message, e);
     }
 
@@ -19,6 +23,7 @@ public class Notification {
     public boolean hasErrors(){
         return !isCorrect();
     }
+
     private static class Error{
         String message;
         Exception cause;

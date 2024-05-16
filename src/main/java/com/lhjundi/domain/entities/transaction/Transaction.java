@@ -20,7 +20,7 @@ public class Transaction {
         this.dueDate = issueDate.plusDays(numberOfCheckoutDays);
     }
 
-    public Transaction(Integer id, LocalDate issueDate, LocalDate dueDate, LocalDate returnDate, Book book, User user) {
+    public Transaction(Integer id, LocalDate issueDate, LocalDate dueDate, LocalDate returnDate, Book book, com.lhjundi.domain.entities.user.User user) {
         this.id = id;
         this.issueDate = issueDate;
         this.dueDate = dueDate;

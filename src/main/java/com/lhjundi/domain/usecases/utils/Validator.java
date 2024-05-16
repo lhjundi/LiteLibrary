@@ -3,7 +3,7 @@ package com.lhjundi.domain.usecases.utils;
 import java.util.Collection;
 
 public abstract class Validator<T> {
-    public abstract Notification validade(T type);
+    public abstract Notification validate(T type);
 
     public static boolean nullOrEmpty(String string){
         return string == null || string.isEmpty();
